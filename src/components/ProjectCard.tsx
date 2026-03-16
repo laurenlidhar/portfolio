@@ -20,7 +20,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
       href={link}
       target="_blank"
       rel="noopener noreferrer"
-      className="group p-5 -m-4 rounded-xl hover:bg-black/[0.06] transition-all flex flex-col h-full no-underline"
+      className="group p-5 -mx-2 md:-m-4 rounded-xl hover:bg-black/[0.06] transition-all flex flex-col h-full no-underline"
     >
       <div className="flex-1">
         <h3 className="text-lg font-bold text-black transition-colors">

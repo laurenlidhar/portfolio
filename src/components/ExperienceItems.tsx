@@ -38,7 +38,7 @@ export const ExperienceItem: React.FC<{ item: ExperienceData }> = ({ item }) => 
     href={item.url}
     target="_blank"
     rel="noopener noreferrer"
-    className="group flex items-center p-3.5 -mx-3.5 rounded-xl hover:bg-black/[0.04] transition-all duration-300"
+    className="group flex items-center p-5 -mx-2 md:p-3.5 md:-mx-3.5 rounded-xl hover:bg-black/[0.04] transition-all duration-300"
   >
     <div className="flex items-center gap-4 w-full">
       <div className="w-[38px] h-[38px] shrink-0 flex items-center justify-center overflow-hidden">
@@ -53,7 +53,7 @@ export const ExperienceItem: React.FC<{ item: ExperienceData }> = ({ item }) => 
         />
       </div>
       <div className="flex flex-col md:flex-row md:items-baseline justify-between w-full gap-1">
-        <div className="flex items-baseline gap-2.5">
+        <div className="flex flex-col md:flex-row md:items-baseline gap-1 md:gap-2.5">
           <h3 className="font-bold text-[16px] group-hover:text-black transition-colors leading-tight">
             {item.company}
           </h3>
@@ -73,7 +73,7 @@ export const LeadershipItem: React.FC<{ item: LeadershipData }> = ({ item }) => 
   const isGrouped = item.type === "grouped";
 
   return (
-    <div className="group p-3.5 -mx-3.5 rounded-xl transition-all duration-300 hover:bg-black/[0.04]">
+    <div className="group p-5 -mx-2 md:p-3.5 md:-mx-3.5 rounded-xl transition-all duration-300 hover:bg-black/[0.04]">
       <div className={isGrouped ? "space-y-4" : ""}>
         <a 
           href={item.url} 
@@ -89,7 +89,7 @@ export const LeadershipItem: React.FC<{ item: LeadershipData }> = ({ item }) => 
             />
           </div>
           <div className="flex flex-col md:flex-row md:items-baseline justify-between w-full gap-1">
-            <div className="flex items-baseline gap-2.5">
+            <div className="flex flex-col md:flex-row md:items-baseline gap-1 md:gap-2.5">
               <h3 className="font-bold text-[16px] group-hover:text-black leading-tight">
                 {item.organization}
               </h3>
